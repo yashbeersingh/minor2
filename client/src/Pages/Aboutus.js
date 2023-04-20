@@ -7,9 +7,9 @@ import bg from "../assets/black-texture.jpg";
 import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
 import instagram from "../assets/instagram.png";
-import Manas from "../assets/Manas.jpeg";
-import Rohit from "../assets/Rohit.jpeg";
-import Jayesh from "../assets/Jayesh.jpeg";
+import Yashbeer from "../assets/Manas.jpeg";
+import Madhur from "../assets/Rohit.jpeg";
+import Ritika from "../assets/Jayesh.jpeg";
 
 const Developers = () => {
   return (
@@ -39,31 +39,31 @@ const Developers = () => {
         <div className="mx-auto mt-5 lg:mt-0 lg:mx-0 bg-jp-black relative shadow-slate-700 shadow-md rounded-md w-72 h-96">
           <div className="h-2/6 bg-mj-yellow rounded-t-md overflow-hidden"></div>
           <img
-            src={Jayesh}
+            src={Ritika}
             alt="developer"
-            className="absolute w-32 top-16 left-20 border-2 rounded-full bg-black border-black"
+            className="absolute w-20 top-16 left-20 border-2 rounded-full bg-black border-black"
           />
           <div className="mt-20 flex flex-col items-center justify-center ">
             <h1 className=" text-slate-300 text-3xl font-semibold">
-              Jayesh Patil
+              Ritika
             </h1>
             <h1 className="mt-1 text-lg text-slate-500">Front-end Developer</h1>
             <div className="w-36 flex justify-between mt-6">
               <a
-                href="https://www.linkedin.com/in/jayesh-s-patil-89b3871bb/"
+                href=""
                 target="blank"
               >
                 {" "}
                 <img src={linkedin} alt="linkdein" className="h-8 w-8" />
               </a>
               <a
-                href="https://www.instagram.com/jayeshspatil1602/"
+                href=""
                 target="blank"
               >
                 {" "}
                 <img src={instagram} alt="instagram" className="h-8 w-8" />
               </a>
-              <a href="https://github.com/jayesh1602" target="blank">
+              <a href="" target="blank">
                 {" "}
                 <img src={github} alt="github" className="h-8 w-8" />
               </a>
@@ -73,33 +73,33 @@ const Developers = () => {
         <div className="mx-auto mt-5 lg:mt-0 lg:mx-0 bg-jp-black relative shadow-slate-700 shadow-md rounded-md w-72 h-96">
           <div className="h-2/6 bg-mj-yellow rounded-t-md overflow-hidden"></div>
           <img
-            src={Rohit}
+            src={Madhur}
             alt="developer"
-            className="absolute w-32 top-16 left-20 border-2 rounded-full bg-black border-black"
+            className="absolute w-20 top-16 left-16 border-2 rounded-full bg-black border-black"
           />
           <div className="mt-20 flex flex-col items-center justify-center ">
             <h1 className=" text-slate-300 text-3xl font-semibold">
-              Rohit Patil
+              Madhur goel
             </h1>
             <h1 className="mt-1 text-lg text-slate-500">
               Full-stack Developer
             </h1>
             <div className="w-36 flex justify-between mt-6">
               <a
-                href="https://www.linkedin.com/in/rohit-patil-35b08b209/"
+                href=""
                 target="blank"
               >
                 {" "}
                 <img src={linkedin} alt="linkdein" className="h-8 w-8" />
               </a>
               <a
-                href="https://www.instagram.com/rohitvpatil0810/"
+                href=""
                 target="blank"
               >
                 {" "}
                 <img src={instagram} alt="linkdein" className="h-8 w-8" />
               </a>
-              <a href="https://github.com/rohitvpatil0810" target="blank">
+              <a href="" target="blank">
                 {" "}
                 <img src={github} alt="github" className="h-8 w-8" />
               </a>
@@ -109,30 +109,30 @@ const Developers = () => {
         <div className="mx-auto my-5 lg:mb-0 lg:mt-0 lg:mx-0 bg-jp-black relative shadow-slate-700 shadow-md rounded-md w-72 h-96">
           <div className="h-2/6 bg-mj-yellow rounded-t-md overflow-hidden"></div>
           <img
-            src={Manas}
+            src={Yashbeer}
             alt="developer"
-            className="absolute w-32 top-16 left-20 border-2 rounded-full bg-black border-black"
+            className="absolute w-20 top-16 left-20 border-2 rounded-full bg-black border-black"
           />
           <div className="mt-20 flex flex-col items-center justify-center ">
             <h1 className=" text-slate-300 text-3xl font-semibold">
-              Manas Jadhav
+              Yashbeer Singh
             </h1>
             <h1 className="mt-1 text-lg text-slate-500">
               Full-stack Developer
             </h1>
             <div className="w-36 flex justify-between mt-6">
               <a
-                href="https://www.linkedin.com/in/manas-jadhav-357607206/"
+                href=""
                 target="blank"
               >
                 {" "}
                 <img src={linkedin} alt="linkdein" className="h-8 w-8" />
               </a>
-              <a href="https://www.instagram.com/manas.jj/" target="blank">
+              <a href="" target="blank">
                 {" "}
                 <img src={instagram} alt="instagram" className="h-8 w-8" />
               </a>
-              <a href="https://github.com/ManasJadhav" target="blank">
+              <a href="" target="blank">
                 {" "}
                 <img src={github} alt="github" className="h-8 w-8" />
               </a>

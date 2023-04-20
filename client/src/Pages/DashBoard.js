@@ -3,10 +3,10 @@ import { Link, Outlet, useNavigate } from "react-router-dom";
 import mainMenu from "../assets/mobile_bar.png";
 import closeMenu from "../assets/close.png";
 
-// import Home from "../components/Home";
-// import List from "../components/List";
+ //import Home from "../components/Home";
+import List from "../components/List";
 import Profile from "../components/Profile";
-// import ProfileExpand from "../components/ProfileExpand";
+import ProfileExpand from "../components/ProfileExpand";
 export default function DashBoard(props) {
   const navigate = useNavigate();
   const [active, setActive] = useState("1");
@@ -21,6 +21,9 @@ export default function DashBoard(props) {
   }
   function selectLink3() {
     setActive("3");
+  }
+  function selectLink4() {
+    setActive("4");
   }
 
   const handleLogOut = async () => {
@@ -129,6 +132,32 @@ export default function DashBoard(props) {
                   Daily
                 </li>
               </Link>
+              <Link to="/dashboard/ts">
+                <li
+                  onClick={selectLink4}
+                  className={
+                    active === "4"
+                      ? "mb-4 flex px-5 py-3 cursor-pointer text-2xl hover:bg-jp-black hover:rounded-md bg-jp-black rounded-md"
+                      : "mb-4 flex px-5 py-3 cursor-pointer text-2xl hover:bg-jp-black hover:rounded-md transition delay-100"
+                  }
+                >
+                  <span className="mr-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-7 w-7"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" 
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                  Scanning
+                </li>
+              </Link>
             </ul>
             <div className="lg:hidden flex">
               <button
@@ -219,6 +248,28 @@ export default function DashBoard(props) {
                     </svg>
                   </span>
                   Daily
+                </li>
+              </Link>
+              <Link to="/dashboard/ts">
+                <li
+                  onClick={selectLink1}
+                  className={
+                    active === "4"
+                      ? "text-rp-yellow flex text-2xl p-2 pt-8"
+                      : "text-rp-yellow  w-fit  flex text-2xl  pt-8"
+                  }
+                >
+                  <span className="mx-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-8 w-8"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                    </svg>
+                  </span>
+                  Scanning
                 </li>
               </Link>
               <div className="ml-6  mt-4 bottom-5 left-16 pb-6 ">

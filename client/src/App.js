@@ -16,6 +16,7 @@ import Developers from "./Pages/Aboutus";
 import ConfirmDelete from "./Pages/ConfirmDelete";
 import { Scrollbars } from "react-custom-scrollbars";
 import Contact from "./Pages/contactUs";
+import ts from "./components/Ts";
 
 Modal.setAppElement("#root");
 
@@ -74,7 +75,7 @@ function App() {
   function closeModalLogin() {
     setIsOpenLogin(false);
   }
-
+  
   const customStyles = {
     overlay: {
       backgroundColor: "rgba(58, 63, 69, 0.71)",
@@ -174,10 +175,21 @@ function App() {
                 />
               }
             ></Route>
+            <Route
+              path="ts"
+              element ={
+                <ts
+
+                openModalConfirm={openModalConfirm}
+                />
+
+              }
+              />
           </Route>
 
           <Route path="/about-us" element={<Developers />} />
           <Route path="/contact-us" element={<Contact />} />
+          
         </Routes>
         <Modal
           isOpen={modalIsOpen}
